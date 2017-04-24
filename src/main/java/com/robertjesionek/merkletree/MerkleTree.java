@@ -13,6 +13,8 @@ public class MerkleTree {
 
     private ArrayList<byte[]> _leafs = new ArrayList<byte[]>();
 
+    private ArrayList<Integer> _levels = new ArrayList<Integer>();
+
     public MerkleTree(boolean hashLeafs) {
         this._hashLeafs = hashLeafs;
     }
@@ -42,5 +44,11 @@ public class MerkleTree {
 
         }
         return out;
+    }
+
+    public void build() {
+        if (this._leafs.size() > 0) {
+
+        }
     }
 }
