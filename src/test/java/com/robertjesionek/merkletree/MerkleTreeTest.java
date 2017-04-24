@@ -1,5 +1,6 @@
 package com.robertjesionek.merkletree;
 
+import org.bouncycastle.util.encoders.Hex;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -10,6 +11,8 @@ public class MerkleTreeTest {
 
     @Test
     public void buildTest() {
+
+        String randomString = Hex.toHexString(DataGenerator.generate());
 
         Assert.assertTrue(true);
 
