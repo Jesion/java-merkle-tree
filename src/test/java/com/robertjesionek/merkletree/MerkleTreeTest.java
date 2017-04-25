@@ -30,10 +30,7 @@ public class MerkleTreeTest {
         tree.addLeafs(this.getData());
         tree.build();
 
-        Thread.sleep(2000);
-
         byte[] merkleRoot = tree.getMerkleRoot();
-
         Assert.assertEquals("7ae9c08c4128fabcb6f8a50cc075f293166798ae38d3f2e12e4a085375cced0e", Hex.toHexString(merkleRoot));
     }
 
