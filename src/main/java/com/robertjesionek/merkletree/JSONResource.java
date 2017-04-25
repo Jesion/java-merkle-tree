@@ -6,11 +6,11 @@ import org.json.JSONException;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class TestResource {
+public class JSONResource {
 
     private String resource;
 
-    public TestResource(String resource) {
+    public JSONResource(String resource) {
         this.resource = resource;
     }
 
